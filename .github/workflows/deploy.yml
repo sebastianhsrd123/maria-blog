@@ -27,5 +27,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: main  # O cambia 'gh-pages' por tu rama de destino
+          BRANCH: gh-pages  # O cambia 'gh-pages' por tu rama de destino
           FOLDER: docs/maria-blog  # Ajusta la carpeta si es diferente
