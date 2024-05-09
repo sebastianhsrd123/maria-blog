@@ -21,11 +21,11 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build --if-present
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-deploy  # O cambia 'gh-pages' por tu rama de destino
-          FOLDER: dist/maria-blog  # Ajusta la carpeta si es diferente
+          FOLDER: dist/maria-blog/  # Ajusta la carpeta si es diferente
