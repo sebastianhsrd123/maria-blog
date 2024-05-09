@@ -28,4 +28,4 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-deploy  # O cambia 'gh-pages' por tu rama de destino
-          FOLDER: docs/maria-blog  # Ajusta la carpeta si es diferente
+          FOLDER: dist/maria-blog  # Ajusta la carpeta si es diferente
