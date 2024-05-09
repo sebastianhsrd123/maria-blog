@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "maria-colombia-aprende": {
+    "maria-blog": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/maria-colombia-aprende",
+            "outputPath": "docs/maria-blog",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "maria-colombia-aprende:build:production"
+              "browserTarget": "maria-blog:build:production"
             },
             "development": {
-              "browserTarget": "maria-colombia-aprende:build:development"
+              "browserTarget": "maria-blog:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "maria-colombia-aprende:build"
+            "browserTarget": "maria-blog:build"
           }
         },
         "test": {
@@ -110,5 +110,5 @@
       }
     }
   },
-  "defaultProject": "maria-colombia-aprende"
+  "defaultProject": "maria-blog"
 }
