@@ -9,6 +9,9 @@ import { FooterComponent } from './modules/copmonents/footer/footer.component';
 import { WorkshopsComponent } from './modules/copmonents/pages/workshops/workshops.component';
 import { ResourcesComponent } from './modules/copmonents/pages/resources/resources.component';
 import { AppRoutingModule } from './app-routing.module';
+import { SurveysComponent } from './modules/copmonents/pages/surveys/surveys.component';
+import { ProjectStoreComponent } from './modules/copmonents/pages/project-store/project-store.component';
+import { MindComputerComponent } from './modules/copmonents/pages/mind-computer/mind-computer.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { AppRoutingModule } from './app-routing.module';
     FooterComponent,
     WorkshopsComponent,
     ResourcesComponent,
+    SurveysComponent,
+    ProjectStoreComponent,
+    MindComputerComponent,
   ],
   imports: [
     BrowserModule,

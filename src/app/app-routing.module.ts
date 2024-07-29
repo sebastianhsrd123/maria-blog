@@ -3,6 +3,9 @@ import { RouterModule, Routes } from "@angular/router";
 import { IndexComponent } from "./modules/copmonents/pages/index/index.component";
 import { WorkshopsComponent } from "./modules/copmonents/pages/workshops/workshops.component";
 import { ResourcesComponent } from "./modules/copmonents/pages/resources/resources.component";
+import { SurveysComponent } from "./modules/copmonents/pages/surveys/surveys.component";
+import { ProjectStoreComponent } from "./modules/copmonents/pages/project-store/project-store.component";
+import { MindComputerComponent } from "./modules/copmonents/pages/mind-computer/mind-computer.component";
 
 const routes: Routes = [
   {
@@ -16,6 +19,18 @@ const routes: Routes = [
   {
     path: "resources",
     component: ResourcesComponent,
+  },
+  {
+    path: "surveys",
+    component: SurveysComponent,
+  },
+  {
+    path: "projects",
+    component: ProjectStoreComponent,
+  },
+  {
+    path: "computer",
+    component: MindComputerComponent,
   },
 ];
 

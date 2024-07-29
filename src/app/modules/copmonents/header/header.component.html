@@ -6,25 +6,55 @@
           <a routerLink="/">Inicio</a>
         </li>
         <li>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSet4yrtpnXR_xm1ZLfoV5uX7xRye-LS-Y9We4H0NQ-Xbx2cKw/viewform">Encuesta directivos</a>
-        </li>
-        <li>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHU9KExa_zwBHzV_2s8c4Uhx3l16MwKp4jxhB8cvdiIyPJ6A/viewform">Encuesta estudiantes</a>
-        </li>
-        <li>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf8YLskcmeUoaJggZSRk4yfJ9SgEW4HUotKJGcb157NjCLgZw/viewform">Encuesta Docentes (PE)</a>
-        </li>
-        <li>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDhjDqZam72YWZ--UgbEsJH-rsXT7X0AqOhok8T1FgrMUyrQ/viewform">Encuesta Lider de Area</a>
+          <a routerLink="/surveys">Encuestas</a>
         </li>
         <li>
           <a routerLink="/workshop">Talleres</a>
         </li>
         <li>
-          <a routerLink="/resources">Recursos</a>
+          <a routerLink="/resources">Fichas</a>
+        </li>
+        <li>
+          <a routerLink="/computer">Modelamiento</a>
+        </li>
+        <li>
+          <a routerLink="/projects">Banco de proyectos</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <nav class="nav-responsive">
+    <div class="menu">
+      <ul  style="justify-content:flex-end; margin-right: 40px; font-size:35px">
+        <li *ngIf="!menuIsActivated">
+          <i style="color: #FFF; " class="fa fa-bars" (click)="menuIsActivated = true"></i>
+        </li>
+        <li *ngIf="menuIsActivated" (click)="menuIsActivated = false">
+          <i style="color: #FFF; " class="fa fa-close"></i>
         </li>
       </ul>
     </div>
   </nav>
 </header>
+
+<section class="responsive-options" *ngIf="menuIsActivated">
+  <div>
+    <a routerLink="/" (click)="menuIsActivated = false">Inicio</a>
+  </div>
+  <div>
+    <a routerLink="/surveys" (click)="menuIsActivated = false">Encuestas</a>
+  </div>
+  <div>
+    <a routerLink="/workshop" (click)="menuIsActivated = false">Talleres</a>
+  </div>
+  <div>
+    <a routerLink="/resources" (click)="menuIsActivated = false">Fichas</a>
+  </div>
+  <div>
+    <a routerLink="/computer" (click)="menuIsActivated = false">Modelamiento</a>
+  </div>
+  <div>
+    <a routerLink="/projects" (click)="menuIsActivated = false">Banco de proyectos</a>
+  </div>
+</section>
 <app-information-box></app-information-box>
